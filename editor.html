@@ -16,6 +16,7 @@
         .leftpart {
            flex-basis: 50%;
            height: 100%;
+           gap: 10px;
            background-color: aqua;
            display: flex;
            flex-direction: column;
@@ -23,29 +24,47 @@
         .content {
            flex-basis: 33.33%;
            height: 100%;
-           background-color: white;
+           background-color: blue;
            
         }
         .rightpart {
            flex-basis: 50%;
+           background-color: purple;
            height: 100%;
-                }
+       }
+         .leftpart .content textarea {
+           width: 100%;
+           height: calc(100% - 20px);  
+           padding: 10px;
+           background-color: black;
+           color: white;
+         }
+         .leftpart .content label {
+           display: block;
+           padding: 10px;
+           background-color: black;
+           color: white;
+         }
+
     </style>
   </head>
   <body>
   <div class="leftpart">
     <div class="content">
-        <textarea>
-            <label>   
-        
-            </label>
-            <textarea>
-        </textarea>
+      <label>HTML</label> 
+      <textarea></textarea>
     </div>
-    <div class="content"></div>
-    <div class="content"></div>
+    <div class="content">
+      <label>CSS</label> 
+      <textarea></textarea>
+      </div>
+    <div class="content">
+       <label>JSS</label> 
+      <textarea></textarea></div>
+    </div>
   </div>
-   <div class="rightpart"></div>
+   <div class="rightpart">
+     
   </body>
 </html> 
 
