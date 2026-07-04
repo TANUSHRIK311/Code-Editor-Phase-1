@@ -92,7 +92,9 @@
   <script> 
     let output = document.getElementById("output");
     let allInputs = document.querySelectorAll(".leftpart textarea");
-    allInputs.forEach(el);
+    allInputs.forEach((el, index)=>{
+
+    })
     let htmlCode, cssCode, jsCode;
     output.contentDocument.body.innerHTML = "<h1>Hello World</h1>";
     output.contentDocument.head.innerHTML = "<style>body { background-color: lightgray; }</style>";
