@@ -94,12 +94,15 @@
     let allInputs = document.querySelectorAll(".leftpart textarea");
     allInputs.forEach((el, index)=>{
       el.addEventListener("input", ()=>{
-        let htmlCode = allInputs[0].value;
-        let cssCode = allInputs[1].value;
-        let jsCode = allInputs[2].value;
-        output.contentDocument.body.innerHTML = htmlCode;
-        output.contentDocument.head.innerHTML = "<style>"+cssCode+"</style>";
-        output.contentWindow.eval(jsCode);
+        if(index == 0){
+
+        }
+        if(index == 0){
+          
+        }
+        if(index == 0){
+          
+        }
       })
 
     })
