@@ -111,6 +111,9 @@ console.log(el.value);
     output.contentDocument.body.innerHTML = "<h1>Hello World</h1>";
     output.contentDocument.head.innerHTML = "<style>body { background-color: lightgray; }</style>";
     output.contentWindow.eval(jsCode);
+    if(jsCode){
+      output.contentWindow.eval(jsCode);
+    }
 
  output.contentWindow.eval("let a = 10; let b = 20; alert(a + b);");
 
